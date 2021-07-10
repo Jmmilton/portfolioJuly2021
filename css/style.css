@@ -22,7 +22,7 @@ html {
 }
 
 .main {
-  background-image: url(/public/images/adrian-Xft-JdC-Jbc-unsplash.jpg); /* for local */
+  background-image: url(../images/adrian-Xft-JdC-Jbc-unsplash.jpg); /* for local */
   /* background-image: url(/images/adrian-Xft-JdC-Jbc-unsplash.jpg); for node */
   background-position: center center;
   -webkit-background-size: cover;
@@ -150,8 +150,18 @@ h2 {
   font-size: 25px;
 }
 
-.next {
-  color: red;
+.dim-arrow {
+  opacity: 0.2;
+}
+
+/* .arrow .prev {
+  display: none;
+} */
+
+.next,
+.prev {
+  color: #565656;
+  transition: ease-in-out 300ms;
 }
 
 .prev:focus,
@@ -161,7 +171,8 @@ h2 {
 }
 .prev:hover,
 .next:hover {
-  opacity: 1;
+  opacity: 0.8;
+  transition: ease-in-out 300ms;
 }
 
 /* .indicators {

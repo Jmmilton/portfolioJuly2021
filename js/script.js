@@ -42,6 +42,7 @@ for(var i = 0; i < projectItem.length; i++){
 
 const seeMoreBtn = document.querySelector('.see-more');
 const hiddenGallery = document.querySelector('.scrolling-wrapper');
+const arrowBtn = document.querySelectorAll('.arrow')
 
 function showMore() {
     hiddenGallery.classList.toggle("show-overflow")
@@ -49,3 +50,32 @@ function showMore() {
 }
 
 seeMoreBtn.addEventListener("click", showMore)
+
+// for (let i = 0; i < arrowBtn.length; i++) {
+//     arrowBtn[i].addEventListener("click", function(){
+//         arrowBtn[1].classList.toggle("dim-arrow");
+//         if(arrowBtn[1].classList.includes("dim-arrow")){
+//             arrowBtn[0].classList.remove("dim-arrow");
+//         }
+//     })
+// }
+
+arrowBtn[0].addEventListener("click", function(){
+    if(hiddenGallery.classList.contains("show-overflow")){
+        arrowBtn[0].classList.add("dim-arrow")
+        arrowBtn[1].classList.remove("dim-arrow")
+    } else {
+        arrowBtn[0].classList.add("dim-arrow")
+        arrowBtn[1].classList.remove("dim-arrow")
+    }
+})
+
+arrowBtn[1].addEventListener("click", function(){
+    if(hiddenGallery.classList.contains("show-overflow")){
+        arrowBtn[1].classList.add("dim-arrow")
+        arrowBtn[0].classList.remove("dim-arrow")
+    } else {
+        arrowBtn[1].classList.add("dim-arrow")
+        arrowBtn[0].classList.remove("dim-arrow")
+    }
+})
