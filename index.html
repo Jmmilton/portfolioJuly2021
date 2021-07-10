@@ -52,20 +52,13 @@
     <section class="project-gallery">
         <h2>Projects</h2>
         <div class="scrolling-wrapper">
-            <a href="#slide1" class="prev arrow">
+            <a href="#slide1" class="prev arrow dim-arrow">
                 <span class="fas fa-angle-left fa-3x arrow-prev prev" aria-hidden="true"></span>
             </a>
-            <a href="#slide2" class="next arrow">
-                <span class="fas fa-angle-left fa-3x arrow-next next" aria-hidden="true"></span>
-            </a>
-            <!-- <ul class="indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-            </ul> -->
             <div class="container-fluid gallery-wrapper" id="slide1">
                 <div class="row">
-                    <div class="gallery-container col-md-1 col-xl-12 col-lg-6">
-                        <div class="project-item col-6 col-md-12" id="1">
+                    <div class="gallery-container">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="1" tabindex="0">
                             <img role="dialog" class="project-img" src="./images/siphon.png" alt="">
                             <div class="project-info">
                                 <h3>Siphon Finance</h3>
@@ -75,7 +68,7 @@
                             </a>
                         </div>
 
-                        <div class="project-item col-6" id="2">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="2" tabindex="0">
                             <img role="dialog" class="project-img" src="./images/Trivia.png" alt="">
                             <div class="project-info">
                                 <h3>Trivia Game</h3>
@@ -85,8 +78,23 @@
                                 <div class="go-btn">View Site</div>
                             </a>
                         </div>
-            
-                        <div class="project-item col-6" id="3">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="gallery-container">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="4" tabindex="0">
+                            <img class="project-img" src="./images/milton.png" alt="">
+                            <div class="project-info">
+                                <h3>MiltonDesign inc.</h3>
+                                <p>(Still in progress)</p>
+                            </div>
+                            <a class="btn-link" target="blank" href="https://jmmilton.github.io/miltondesigninc/">
+                                <div class="go-btn">View Site</div>
+                            </a>
+                        </div>
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="3" tabindex="0">
                             <img class="project-img" src="./images/School.png" alt="">
                             <div class="project-info">
                                 <h3>School Project</h3>
@@ -98,21 +106,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!--  -->
+
+            <div class="container-fluid  gallery-wrapper gallery-wrapper-2"  id="slide2">
                 <div class="row">
                     <div class="gallery-container">
-                        <div class="project-item col-6" id="4">
-                            <img class="project-img" src="./images/milton.png" alt="">
-                            <div class="project-info">
-                                <h3>MiltonDesign inc.</h3>
-                                <p>(Still in progress)</p>
-                            </div>
-                            <a class="btn-link" target="blank" href="https://jmmilton.github.io/miltondesigninc/">
-                                <div class="go-btn">View Site</div>
-                            </a>
-                        </div>
-            
-                        <div class="project-item col-6" id="5">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="5" tabindex="0">
                             <img class="project-img" src="./images/thirdeye1.png" alt="">
                             <div class="project-info">
                                 <h3>Third Eye Cleaning</h3>
@@ -122,16 +123,8 @@
                                 <div class="go-btn">View Site</div>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <!--  -->
-
-            <div class="container-fluid  gallery-wrapper"  id="slide2">
-                <div class="row">
-                    <div class="gallery-container">
-                        <div class="project-item col-6" id="6">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="6" tabindex="0">
                             <img class="project-img" src="./images/fitness.png" alt="">
                             <div class="project-info">
                                 <h3>Fitness Website</h3>
@@ -146,7 +139,7 @@
 
                 <div class="row"></div>
                     <div class="gallery-container">
-                        <div class="project-item col-6" id="7">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="7" tabindex="0">
                             <img class="project-img" src="./images/colourgame.png" alt="">
                             <div class="project-info">
                                 <h3>Colour Guessing Game</h3>
@@ -157,7 +150,7 @@
                             </a>
                         </div>
 
-                        <div class="project-item col-6" id="8">
+                        <div class="project-item col-6 col-md-2 col-lg-6" id="8" tabindex="0">
                             <img class="project-img" src="./images/outdoors.png" alt="">
                             <div class="project-info">
                                 <h3>Outdoors Website</h3>
@@ -169,6 +162,9 @@
                         </div>
                     </div>
                 </div>
+                <a href="#slide2" class="next arrow">
+                    <span class="fas fa-angle-left fa-3x arrow-next next" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
         <button class="see-more"></button>

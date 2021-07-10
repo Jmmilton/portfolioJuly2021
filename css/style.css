@@ -132,7 +132,7 @@ h2 {
 
 .arrow-prev {
   position: absolute;
-  left: 0;
+  left: 50px;
   margin-top: 20rem;
   margin-left: 3.5em;
   font-size: 25px;
@@ -144,7 +144,7 @@ h2 {
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
   position: absolute;
-  right: 0;
+  right: 50px;
   margin-top: 20rem;
   margin-right: 3.5em;
   font-size: 25px;
@@ -154,14 +154,16 @@ h2 {
   opacity: 0.2;
 }
 
-/* .arrow .prev {
-  display: none;
-} */
+.arrow a {
+  display: flex !important;
+  align-items: center !important;
+}
 
 .next,
 .prev {
   color: #565656;
   transition: ease-in-out 300ms;
+  margin: auto !important;
 }
 
 .prev:focus,
@@ -212,6 +214,10 @@ h2 {
   scroll-snap-align: start;
 }
 
+.project-gallery h2 {
+  padding-bottom: 60px;
+}
+
 .project-item {
   position: relative;
   float: left;
@@ -226,7 +232,12 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
-.project-item:hover {
+.btn-link:focus {
+  border: 1px solid blue;
+}
+
+.project-item:hover,
+.project-item:focus {
   cursor: pointer;
   background-color: #dedede;
 }
@@ -310,7 +321,7 @@ img {
   scroll-snap-align: end;
 }
 
-.label {
+/* .label {
   font-family: "Maven Pro", sans-serif;
 }
 
@@ -333,7 +344,7 @@ textarea {
   background-color: #565656 !important;
   color: #dedede !important;
   border: 1px solid #dedede;
-}
+} */
 
 .links {
   padding-top: 50px;
@@ -406,8 +417,9 @@ textarea {
 
 .show-overflow {
   display: block !important;
-  transition: ease-in-out 500ms;
-  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.gallery-wrapper-2 {
 }
 
 .scrolling-wrapper {
@@ -418,7 +430,6 @@ textarea {
   /* scroll-snap-align: start; */
   scroll-behavior: smooth;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  transition: visibility 0s, opacity 0.5s linear;
 }
 
 @media only screen and (max-width: 600px) {
@@ -530,9 +541,27 @@ textarea {
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
-    right: 0;
+    right: 50px;
     margin-top: 30rem;
     margin-right: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 1460px) {
+  .arrow-prev {
+    margin-top: 30rem;
+    margin-left: 1em;
+    left: 150px;
+  }
+
+  .arrow-next {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+    right: 150px;
+    margin-top: 30rem;
+    margin-right: 1em;
   }
 }
 
@@ -547,7 +576,7 @@ textarea {
     -o-transform: scale(-1, -1);
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
-    right: 0;
+    right: 50px;
     margin-top: 30rem;
     margin-right: 1em;
   }
