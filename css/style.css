@@ -196,7 +196,7 @@ h2 {
 .gallery-wrapper {
   flex: 0 0 auto;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -211,6 +211,7 @@ h2 {
 }
 
 .project-gallery {
+  scroll-snap-type: y mandatory;
   scroll-snap-align: start;
 }
 
@@ -318,7 +319,7 @@ img {
   padding-top: 50px;
   padding-left: 0px !important;
   padding-right: 0px !important;
-  /* scroll-snap-align: end; */
+  scroll-snap-align: end;
 }
 
 /* .label {
@@ -426,7 +427,7 @@ textarea {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  scroll-snap-type: proximity;
+  scroll-snap-type: y proximity;
   /* scroll-snap-align: start; */
   scroll-behavior: smooth;
   overflow-x: hidden; /* Hide horizontal scrollbar */
