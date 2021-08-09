@@ -62,6 +62,10 @@ h2 {
   font-family: "Maven Pro", sans-serif;
 }
 
+.break {
+  padding-top: 45px;
+}
+
 .about {
   width: 100%;
   height: auto;
