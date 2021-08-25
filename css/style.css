@@ -218,7 +218,7 @@ h2 {
 .project-gallery {
   scroll-snap-type: y mandatory;
   scroll-snap-align: start;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
 }
 
 .project-gallery h2 {
@@ -322,7 +322,7 @@ img {
 .contact {
   text-align: center;
   color: rgb(0, 0, 0);
-  /* padding-top: 50px; */
+  padding-top: 50px;
   padding-left: 0px !important;
   padding-right: 0px !important;
   scroll-snap-align: end;
@@ -355,7 +355,7 @@ textarea {
 
 .links {
   padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   display: flex;
   justify-content: center;
 }
@@ -575,6 +575,16 @@ textarea {
   .next,
   .prev {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 521px) {
+  .contact {
+    padding-top: 0;
+  }
+
+  .project-gallery {
+    margin-bottom: -50px;
   }
 }
 
