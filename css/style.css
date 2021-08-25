@@ -496,22 +496,20 @@ textarea {
   }
 
   .layerDark,
-  .layerLight,
-  .spacerDark,
-  .spacerLight {
+  .layerLight {
     background-image: none;
   }
 
-  /* .spacerLight,
+  .spacerLight,
   .spacerDark {
-    aspect-ratio: 450/900;
-    width: 100%;
+    aspect-ratio: 0;
+    /* width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
   }
 
-  .layerLight {
+  /* .layerLight {
     background-image: url("/images/layerMobile.svg");
   } */
 
@@ -520,12 +518,12 @@ textarea {
   }
 
   .icons {
-    padding-bottom: 3em;
+    padding-bottom: 1em;
   }
 
-  .project-gallery {
+  /* .project-gallery {
     margin-top: -11em;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
