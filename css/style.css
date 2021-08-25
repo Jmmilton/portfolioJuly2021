@@ -518,7 +518,7 @@ textarea {
   }
 
   .icons {
-    padding-bottom: 3em;
+    padding-bottom: 1em;
   }
 
   /* .project-gallery {
@@ -578,7 +578,7 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 521px) {
+/* @media only screen and (min-width: 521px) {
   .contact {
     padding-top: 0;
   }
@@ -590,7 +590,7 @@ textarea {
   .about-wrapper {
     padding-bottom: 13em;
   }
-}
+} */
 
 @media only screen and (min-width: 767px) {
   .wrapper,
