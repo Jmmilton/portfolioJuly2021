@@ -360,12 +360,25 @@ textarea {
 }
 
 .icons {
-  margin: 30px;
+  margin: 0 auto;
   color: rgb(62, 62, 62);
   transition: ease-in-out 300ms;
+  padding-bottom: 1em;
 }
 
 .icons:hover {
+  color: #0b59ca;
+  transform: scale(1.2);
+}
+
+.resume-icon {
+  margin: 30px;
+  color: rgb(62, 62, 62);
+  transition: ease-in-out 300ms;
+  padding-bottom: 4em;
+}
+
+.resume-icon:hover {
   color: #0b59ca;
   transform: scale(1.2);
 }
@@ -521,10 +534,21 @@ textarea {
     padding-bottom: 1em;
   }
 
+  .resume-icon {
+    padding-bottom: 1em;
+  }
+
   /* .project-gallery {
     margin-top: -11em;
   } */
 }
+
+/* @media only screen and (min-width: 600px) and (max-width: 933px) {
+  .contact {
+    padding-top: 0px;
+    margin-top: -48px;
+  }
+} */
 
 @media only screen and (max-width: 767px) {
   .icons {
@@ -626,6 +650,14 @@ textarea {
     margin-top: 30rem;
     margin-right: 3.5em;
   }
+
+  .contact {
+    padding-top: 0px;
+    margin-top: -48px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
 }
 
 @media only screen and (min-width: 1460px) {
