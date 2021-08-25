@@ -354,7 +354,6 @@ textarea {
 
 .links {
   padding-top: 50px;
-  /* padding-bottom: 50px; */
   display: flex;
   justify-content: center;
 }
@@ -536,6 +535,10 @@ textarea {
 
   .resume-icon {
     padding-bottom: 1em;
+  }
+
+  .links {
+    padding-bottom: 50px;
   }
 
   /* .project-gallery {
