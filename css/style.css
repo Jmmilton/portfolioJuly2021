@@ -10,6 +10,11 @@ html {
   scroll-snap-type: y proximity;
 }
 
+.app {
+  height: 100%;
+  /* position: fixed; */
+}
+
 .main,
 .about,
 .project-gallery {
