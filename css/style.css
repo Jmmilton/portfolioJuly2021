@@ -705,3 +705,9 @@ textarea {
     margin-right: 1em;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  html {
+    scroll-snap-type: none;
+  }
+}
